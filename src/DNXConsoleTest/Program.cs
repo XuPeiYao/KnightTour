@@ -14,6 +14,7 @@ namespace DNXConsoleTest{
             watch.Stop();
             Console.WriteLine($"運算耗時:{watch.Elapsed}");
             Console.WriteLine(result.ToString());
+            Console.ReadKey();
         }
 
         public static Point[] Steps = {//可移動座標

@@ -55,7 +55,7 @@ namespace DNXConsoleTest{
             return result;
         }
         public override string ToString() {
-            return string.Join("\r\n", Data.Select(x => string.Join("\t", x.Select(y=> string.Format("{0,4:####}",y)))));
+            return string.Join("\r\n", Data.Select(x => string.Join("", x.Select(y=> string.Format("{0,6:######}",y)))));
         }
     }
 }
